@@ -1,4 +1,4 @@
-Unfortunately, Gemini doesn't have its own files with common settings. Therefore, every time you start a project, you need to write the rules again in the chat window. Even if you work with one project for a long time, Gemini may forget to use some rules. This is a convenient way to solve the problem - formalize rules and create your own settings file.
+Since Gemini doesn't have its own file with common settings, every time you start a new project, you have to re-write the rules in the chat window. Even if you work on one project for a long time, Gemini may forget to use some rules. This is a convenient way to solve the problem - formalize the rules and create your own settings file.
 
 # Agent rules
 This repository contains a `rules.toml` file designed to configure your AI assistant (e.g., Gemini in Android Studio, ChatGPT, Claude, or other LLMs). By defining a set of rules in this TOML file, you can guide the assistant’s behavior, ensuring more consistent responses and adherence to specific project guidelines or personal preferences.
@@ -17,7 +17,7 @@ This repository contains a `rules.toml` file designed to configure your AI assis
 
 ---
 
-К сожалению, у Gemini нет собственного файла с общими настройками. Поэтому каждый раз, когда вы начинаете новый проект, вам приходится заново писать правила в окне чата. Даже если вы долго работаете над одним проектом, Gemini может забыть использовать некоторые правила. Это удобный способ решить проблему — формализовать правила и создать собственный файл настроек.
+Поскольку у Gemini нет собственного файла с общими настройками, каждый раз, когда вы начинаете новый проект, вам приходится заново писать правила в окне чата. Даже если вы долго работаете над одним проектом, Gemini может забыть использовать некоторые правила. Это удобный способ решить проблему — формализовать правила и создать собственный файл настроек.
 
 # Правила для ассистента
 
