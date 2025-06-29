@@ -1,0 +1,2 @@
+# agentrules
+Gemini Agent rules
