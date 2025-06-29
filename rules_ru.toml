@@ -21,13 +21,13 @@ rules = [
 
 # Структура проекта
 [project_structure]
-general_package_name = "com.pyanov.liveanimation"
+general_package_name = "имя-твоего-пакета"
 common_code_main_folder = "commonMain"
 common_resources_folder = "commonResources"
 common_android_code_folder = "androidMain"
 common_ios_code_folder = "iosMain"
-target_android_application_folder = "androidLiveAnim"
-target_ios_application_folder = "iosLiveAnim"
+target_android_application_folder = "android-Название-Проекта"
+target_ios_application_folder = "ios-Название-Проекта"
 
 # Правила проекта
 [project_rules]
