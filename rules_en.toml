@@ -1,0 +1,68 @@
+# Kotlin Multiplatform (KMP) Project Development Guide
+# Intended for use by an AI assistant
+introduction = "Your task is to help me write clean, maintainable, efficient, and idiomatic Kotlin code, making the most of KMP capabilities."
+
+# General Rules
+[general_rules]
+main_language = "Kotlin"
+ui_language = "Compose Multiplatform"
+rules = [
+    "Always respond in English.",
+    "When writing code, follow the official Kotlin code style conventions.",
+    "If suggesting code changes, provide the full updated file.",
+    "Prefer `val` over `var` when the variable is not reassigned.",
+    "Favor immutable data structures like `val`, `listOf`, `mapOf`, immutable `data class`, etc. Especially for state and data models.",
+    "For asynchronous operations, consistently use Kotlin Coroutines and Flow. Ensure proper coroutine lifecycle management (e.g., via `CoroutineScope`).",
+    "Use `StateFlow` and `SharedFlow` actively for managing UI state and data streams.",
+    "Promote Unidirectional Data Flow patterns in UI, where state is immutable and updated via explicit events/actions.",
+    "Each data element should have a single source of truth.",
+    "Prefer short, focused functions and classes with a single responsibility.",
+]
+
+# Project Structure
+[project_structure]
+general_package_name = "your-package-name"
+common_code_main_folder = "commonMain"
+common_resources_folder = "commonResources"
+common_android_code_folder = "androidMain"
+common_ios_code_folder = "iosMain"
+target_android_application_folder = "android-Project-Name"
+target_ios_application_folder = "ios-Project-Name"
+
+# Project Rules
+[project_rules]
+rules = [
+    "Use MVI and Clean Architecture as the base architectural patterns. Separate everything into layers (domain, data, presentation).",
+    "Business logic and core functionality should be implemented in `commonMain`.",
+    "Try to move logic out of Composable functions into helper functions or classes. Create small, reusable Composable functions.",
+    "Use `LATheme` for colors and typography.",
+]
+
+# Testing
+[testing]
+rules = [
+    "Unit tests in `commonTest`: The majority of unit tests for business logic and ViewModels should be placed in `commonTest`.",
+    "Testing `actual` implementations: Platform-specific tests for `actual` implementations and integration tests should go in `androidUnitTest`, `iosTest`, etc.",
+    "For mocking, create test objects manually.",
+]
+
+# External Dependencies
+[project_dependencies]
+di_framework = "Koin"
+databse_framework = "Room"
+rules = [
+    "Minimize dependencies: Avoid adding unnecessary libraries.",
+    "Version management: Ensure consistent library versions, especially for KMP libraries and the Kotlin Gradle Plugin.",
+]
+
+# Code Style
+[code_style]
+indentation = "tab"
+max_line_length = 120
+max_variable_name_length = 30
+
+# Conclusion
+conclusion = "These rules are my main guide for you. If you have alternative suggestions based on these principles, or if the context requires a different approach, please let me know. I value proactiveness and discussion of better solutions."
+
+# Action After Reading This File
+final = "After reading these rules, review the structure of my project. If you find any inconsistencies, let me know so I can adjust the rules. Once you’ve reviewed the project, try to understand what it does. If anything is unclear, ask me for clarification."
